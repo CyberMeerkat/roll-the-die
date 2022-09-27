@@ -2,15 +2,7 @@ using System;
 
 public class Player
 { 
-    public int RollDie()
-    {
-        Random rnd = new Random();
-        return rnd.Next(1, 18);
-    }
+    public int RollDie()=> new Random().Next(1,19);
 
-    public double GenerateSpellStrength()
-    {
-        Random rnd = new Random();
-        return rnd.NextDouble();
-    }
+    public double GenerateSpellStrength() => new Random().NextDouble() *100;
 }
